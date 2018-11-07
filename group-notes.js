@@ -3,7 +3,7 @@ var v = [];
 var queue = [];
 var windowLength = 50;
 var windowOpen = false;
-
+var windowStart;
 var openChord;
 
 inlets = 2;
@@ -11,6 +11,24 @@ inlets = 2;
 setinletassist(0,"pitch");
 setinletassist(1,"velocity");
 setoutletassist(0,"chord");
+
+function clear() {
+	openNotes = {};
+	v = [];
+	queue = [];
+	windowLength = 50;
+	windowOpen = false;
+}
+
+function status() {
+	post(JSON.stringify({
+		on: keys(openNotes),
+		wo: windowOpen,
+		q: queue.length,
+		q1: queue.length ? queue[0] : null
+	}));
+	post();
+}
 
 function msg_int(f) {
 	v[inlet] = f;
@@ -21,6 +39,8 @@ function msg_int(f) {
 }
 
 function acceptNote() {
+	closeWindow();
+	
 	if (v[1] === 0) {
 		// Got a note-off
 		var chord = openNotes[v[0]];
@@ -43,6 +63,7 @@ function acceptNote() {
 		var n = Date.now();
 		
 		windowOpen = true;
+		windowStart = n;
 		openChord = {
 			s: n,
 			q: null,
@@ -59,7 +80,7 @@ function acceptNote() {
 		
 		queue.push(openChord);
 		
-		;(new Task(closeWindow, this)).schedule(windowLength);
+		//;(new Task(closeWindow, this)).schedule(windowLength+1);
 	}
 	
 	openChord.p.push(v[0]);
@@ -83,5 +104,13 @@ function rectifyQueue() {
 }
 
 function closeWindow() {
-	windowOpen = false;
+	if (Date.now() >= windowStart + windowLength) {
+		windowOpen = false;
+	}
+}
+
+function keys(o) {
+	var r = [];
+	for (var k in o) r.push(k);
+	return r;
 }
