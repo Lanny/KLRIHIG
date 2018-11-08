@@ -1,4 +1,7 @@
-var history = {};
+var history = {0: []};
+
+inlets = 1;
+outlets = 2;
 
 setinletassist(0,"operation");
 setoutletassist(0,"value");
@@ -19,17 +22,8 @@ function showhist() {
 	post(JSON.stringify(history));
 }
 
-function most() {
-	var ml = 0;
-	var mk;
-	for (var key in history) {
-		if (history[key].length > ml) {
-			mk = key;
-			ml = history[key].length;
-		}
-	}
-	
-	outlet(0, mk);
+function first() {	
+	outlet(0, history[0]);
 }
 
 function predict(k) {
@@ -41,7 +35,7 @@ function predict(k) {
 //	}
 	k = '' + k;
 	if (!(k in history)) {
-		outlet(0,'NO_HISTORY');
+		//outlet(0,'NO_HISTORY');
 		return;
 	}
 	
