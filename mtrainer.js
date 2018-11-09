@@ -7,7 +7,7 @@ setinletassist(0,"operation");
 setoutletassist(0,"value");
 
 function clear() {
-	history = {};
+	history = {0: []};
 }
 
 function add(k, v) {
