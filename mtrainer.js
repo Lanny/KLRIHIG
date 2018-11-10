@@ -5,6 +5,7 @@ outlets = 2;
 
 setinletassist(0,"operation");
 setoutletassist(0,"value");
+setoutletassist(1,"done");
 
 function clear() {
 	history = {0: []};
@@ -35,7 +36,7 @@ function predict(k) {
 //	}
 	k = '' + k;
 	if (!(k in history)) {
-		//outlet(0,'NO_HISTORY');
+		outlet(1, 'bang');
 		return;
 	}
 	
