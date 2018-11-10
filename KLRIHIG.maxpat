@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1119.416748, 503.0, 25.0, 22.0 ],
+					"style" : "",
+					"text" : "r e"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-30",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -274,7 +287,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1100.666748, 520.0, 25.0, 22.0 ],
+					"patching_rect" : [ 1082.416748, 503.0, 25.0, 22.0 ],
 					"style" : "",
 					"text" : "r g"
 				}
@@ -529,7 +542,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-3",
@@ -1104,7 +1116,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 912.333313, 778.0, 139.666687, 22.0 ],
 					"style" : "",
-					"text" : "57/59/64/69 57/59/63/64"
+					"text" : "0"
 				}
 
 			}
@@ -1832,6 +1844,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-66", 0 ],
+					"midpoints" : [ 1128.916748, 534.0, 1110.166748, 534.0 ],
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-25", 1 ],
 					"midpoints" : [ 659.583313, 1057.0, 625.583313, 1057.0 ],
 					"source" : [ "obj-24", 1 ]
@@ -2173,6 +2193,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-66", 0 ],
+					"midpoints" : [ 1091.916748, 534.0, 1110.166748, 534.0 ],
 					"source" : [ "obj-76", 0 ]
 				}
 
@@ -2322,13 +2343,6 @@
 				"name" : "strjoin.js",
 				"bootpath" : "/Users/Shared/Max 7/Examples/javascript/lists+strings",
 				"patcherrelativepath" : "../../Shared/Max 7/Examples/javascript/lists+strings",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BE!",
-				"bootpath" : "~/Downloads",
-				"patcherrelativepath" : "../Downloads",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
