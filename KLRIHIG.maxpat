@@ -17,7 +17,7 @@
 		"default_fontname" : "Arial",
 		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 2,
+		"gridsnaponopen" : 1,
 		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
 		"toolbarvisible" : 1,
@@ -44,6 +44,25 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"id" : "obj-38",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "status-panel.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 210.0, 671.0, 615.0, 409.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
 					"id" : "obj-37",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -52,6 +71,8 @@
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 210.0, 246.5, 615.0, 398.5 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 210.0, 246.5, 615.0, 398.5 ],
 					"viewvisibility" : 1
 				}
 
@@ -2266,6 +2287,13 @@
 			}
 , 			{
 				"name" : "radio-group.maxpat",
+				"bootpath" : "~/KLRIHIG",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "status-panel.maxpat",
 				"bootpath" : "~/KLRIHIG",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
