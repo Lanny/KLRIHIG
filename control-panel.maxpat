@@ -54,7 +54,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 45.0, 252.0, 177.0, 32.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 110.0, 177.0, 32.0 ],
+					"presentation_rect" : [ 14.0, 119.0, 177.0, 32.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -95,7 +95,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 412.0, 654.0, 113.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 220.0, 110.0, 171.0, 21.0 ],
+					"presentation_rect" : [ 224.0, 119.0, 171.0, 21.0 ],
 					"rounded" : 7.0,
 					"style" : "",
 					"text" : "Train Model",
@@ -121,7 +121,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 229.0, 290.0, 172.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 217.0, 252.0, 172.0, 24.0 ],
+					"presentation_rect" : [ 221.0, 261.0, 172.0, 24.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -143,7 +143,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 229.0, 258.0, 172.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 217.0, 225.0, 172.0, 24.0 ],
+					"presentation_rect" : [ 221.0, 234.0, 172.0, 24.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -154,7 +154,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 91.0, 732.0, 133.0, 22.0 ],
 					"style" : "",
 					"text" : "radio-group mc-order 1"
@@ -178,7 +178,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 229.0, 226.0, 172.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 217.0, 198.0, 172.0, 24.0 ],
+					"presentation_rect" : [ 221.0, 207.0, 172.0, 24.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -200,7 +200,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 229.0, 194.0, 172.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 217.0, 171.0, 172.0, 24.0 ],
+					"presentation_rect" : [ 221.0, 180.0, 172.0, 24.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -217,7 +217,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 434.0, 23.0, 177.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 421.5, 10.0, 177.0, 25.0 ],
+					"presentation_rect" : [ 425.5, 19.0, 177.0, 25.0 ],
 					"style" : "",
 					"text" : "PLAYBACK",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -236,7 +236,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 459.0, 528.0, 113.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 220.0, 77.0, 171.0, 21.0 ],
+					"presentation_rect" : [ 224.0, 86.0, 171.0, 21.0 ],
 					"rounded" : 7.0,
 					"style" : "",
 					"text" : "Save .mkov File",
@@ -253,7 +253,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 15.0, 15.0, 4.0, 4.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 217.0, 74.0, 177.0, 27.0 ],
+					"presentation_rect" : [ 221.0, 83.0, 177.0, 27.0 ],
 					"style" : ""
 				}
 
@@ -270,7 +270,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 229.0, 23.0, 177.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 217.0, 10.0, 177.0, 25.0 ],
+					"presentation_rect" : [ 221.0, 19.0, 177.0, 25.0 ],
 					"style" : "",
 					"text" : "TRAINING",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -289,7 +289,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 412.0, 501.0, 113.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 220.0, 45.0, 171.0, 21.0 ],
+					"presentation_rect" : [ 224.0, 54.0, 171.0, 21.0 ],
 					"rounded" : 7.0,
 					"style" : "",
 					"text" : "Load .mkov File",
@@ -315,7 +315,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 24.0, 124.0, 177.0, 32.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 40.0, 177.0, 32.0 ],
+					"presentation_rect" : [ 14.0, 49.0, 177.0, 32.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -332,7 +332,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 24.0, 23.0, 177.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 10.0, 177.0, 25.0 ],
+					"presentation_rect" : [ 14.0, 19.0, 177.0, 25.0 ],
 					"style" : "",
 					"text" : "LOGGING",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -356,7 +356,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 24.0, 90.0, 177.0, 32.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 75.0, 177.0, 32.0 ],
+					"presentation_rect" : [ 14.0, 84.0, 177.0, 32.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -378,7 +378,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 24.0, 55.0, 177.0, 32.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 145.0, 177.0, 32.0 ],
+					"presentation_rect" : [ 14.0, 154.0, 177.0, 32.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -486,7 +486,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.043137, 0.364706, 0.094118, 1.0 ],
+					"bgcolor" : [ 0.098039, 0.733333, 0.062745, 1.0 ],
 					"bgoncolor" : [ 0.986024, 0.0, 0.027073, 1.0 ],
 					"id" : "obj-82",
 					"maxclass" : "textbutton",
@@ -497,7 +497,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 91.0, 630.0, 100.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 421.5, 44.0, 177.0, 24.0 ],
+					"presentation_rect" : [ 425.5, 53.0, 177.0, 24.0 ],
 					"rounded" : 20.599998,
 					"style" : "velvet",
 					"text" : "Start Playback",
@@ -541,7 +541,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 0.0, 0.0, 4.0, 4.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 217.0, 42.0, 177.0, 27.0 ],
+					"presentation_rect" : [ 221.0, 51.0, 177.0, 27.0 ],
 					"style" : ""
 				}
 
@@ -556,7 +556,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 229.0, 157.0, 173.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 217.0, 144.0, 173.0, 22.0 ],
+					"presentation_rect" : [ 221.0, 153.0, 173.0, 22.0 ],
 					"style" : "",
 					"text" : "Chain Order",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -572,7 +572,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 30.0, 30.0, 4.0, 4.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 217.0, 107.0, 177.0, 27.0 ],
+					"presentation_rect" : [ 221.0, 116.0, 177.0, 27.0 ],
 					"style" : ""
 				}
 
@@ -581,19 +581,20 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bordercolor" : [ 0.439216, 0.74902, 0.254902, 1.0 ],
 					"drag_window" : 1,
-					"grad1" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"grad1" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 					"grad2" : [ 0.086275, 0.309804, 0.52549, 1.0 ],
 					"id" : "obj-89",
 					"ignoreclick" : 0,
+					"jspainterfile" : "Macintosh HD:/Users/lanny/KLRIHIG/jspainter/beveled-panel.js",
 					"maxclass" : "panel",
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 0.0, 0.0, 4.0, 4.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 612.0, 404.0 ],
+					"presentation_rect" : [ -0.5, 0.0, 612.0, 404.0 ],
 					"proportion" : 0.39,
 					"rounded" : 39,
 					"style" : ""
