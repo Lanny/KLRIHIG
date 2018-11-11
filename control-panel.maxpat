@@ -39,6 +39,28 @@
 		"showontab" : 1,
 		"boxes" : [ 			{
 				"box" : 				{
+					"args" : [ "prediction" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-2",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "lg-ctrl.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 24.0, 165.0, 177.0, 32.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 14.0, 190.0, 177.0, 32.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"args" : [ "training" ],
 					"bgmode" : 0,
 					"border" : 0,
@@ -52,7 +74,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 45.0, 252.0, 177.0, 32.0 ],
+					"patching_rect" : [ 24.0, 205.0, 177.0, 32.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 14.0, 119.0, 177.0, 32.0 ],
 					"viewvisibility" : 1
@@ -363,7 +385,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "prediction" ],
+					"args" : [ "prediction-basis" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
