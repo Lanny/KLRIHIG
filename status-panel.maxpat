@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 615.0, 645.0, 612.0, 404.0 ],
+		"rect" : [ 615.0, 645.0, 943.0, 511.0 ],
 		"openrect" : [ 0.0, 0.0, 612.0, 404.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -342,7 +342,7 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bordercolor" : [ 0.439216, 0.74902, 0.254902, 1.0 ],
+					"bordercolor" : [ 0.406661, 0.104204, 0.12024, 1.0 ],
 					"drag_window" : 1,
 					"grad1" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 					"grad2" : [ 0.086275, 0.309804, 0.52549, 1.0 ],
@@ -355,7 +355,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 0.0, 0.0, 4.0, 4.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 612.0, 404.0 ],
+					"presentation_rect" : [ -0.5, 0.0, 612.0, 404.0 ],
 					"proportion" : 0.39,
 					"rounded" : 39,
 					"style" : ""

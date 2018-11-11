@@ -38,18 +38,6 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-1",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 290.0, 347.0, 71.0, 22.0 ],
-					"style" : "",
-					"text" : "print ZORK"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -191,7 +179,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 215.0, 315.0, 27.0, 22.0 ],
+					"patching_rect" : [ 215.0, 309.0, 27.0, 22.0 ],
 					"style" : "",
 					"text" : "s d"
 				}
@@ -592,7 +580,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-117", 0 ],
 					"source" : [ "obj-19", 1 ]
 				}
 

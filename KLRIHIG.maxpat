@@ -498,7 +498,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
@@ -1395,7 +1394,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 210.0, 30.0, 355.0, 22.0 ],
+					"patching_rect" : [ 895.0, 839.0, 355.0, 22.0 ],
 					"style" : "",
 					"text" : "\"Macintosh HD:/Users/lanny/KLRIHIG/jspainter/beveled-panel.js\""
 				}
@@ -1409,7 +1408,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 210.0, 60.5, 150.0, 22.0 ],
+					"patching_rect" : [ 895.0, 869.5, 150.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -1426,7 +1425,7 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 210.0, 90.0, 128.0, 128.0 ],
+					"patching_rect" : [ 895.0, 900.0, 180.0, 172.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -2163,7 +2162,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-95", 0 ],
-					"midpoints" : [ 1209.5, 433.0, 1569.0, 433.0 ],
+					"midpoints" : [ 1209.5, 434.0, 1569.0, 434.0 ],
 					"order" : 0,
 					"source" : [ "obj-101", 0 ]
 				}
