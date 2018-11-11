@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 2620.0, 267.0, 640.0, 594.0 ],
+		"rect" : [ 4000.0, 351.0, 640.0, 594.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,18 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 290.0, 347.0, 71.0, 22.0 ],
+					"style" : "",
+					"text" : "print ZORK"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "newobj",
@@ -179,7 +191,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 215.0, 305.0, 27.0, 22.0 ],
+					"patching_rect" : [ 215.0, 315.0, 27.0, 22.0 ],
 					"style" : "",
 					"text" : "s d"
 				}
@@ -580,7 +592,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-117", 0 ],
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-19", 1 ]
 				}
 

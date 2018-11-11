@@ -501,18 +501,6 @@
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-41",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 577.0, 558.0, 80.0, 22.0 ],
-									"style" : "",
-									"text" : "print ZAMBO"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
 									"id" : "obj-81",
 									"maxclass" : "newobj",
@@ -919,15 +907,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-36", 1 ],
-									"order" : 1,
-									"source" : [ "obj-37", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-41", 0 ],
-									"order" : 0,
 									"source" : [ "obj-37", 0 ]
 								}
 

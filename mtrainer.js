@@ -1,4 +1,6 @@
 var history = {0: []};
+var ordTree = {};
+var treeStale = true;
 
 inlets = 1;
 outlets = 2;
@@ -17,6 +19,7 @@ function add(k, v) {
 	}
 	
 	history[k].push(v);
+	treeStale = true;
 }
 
 function showhist() {
@@ -28,18 +31,53 @@ function first() {
 }
 
 function predict(k) {
-//	var cumu = {};
-//	for (var i=0; i<history.length; i++) {
-//		var v = history[i];
-//		if (!(v in cumu)) cumu[v] = 0;
-//		cumu[v] += 1;
-//	}
 	k = '' + k;
 	if (!(k in history)) {
-		outlet(1, 'bang');
-		return;
+		var ok = k;
+		k = treeSearch(k);
+		post('Got ' + ok + ' but had no history, using ' + k + ' instead.'); post();
 	}
 	
 	var idx = ~~(Math.random() * history[k].length);
 	outlet(0, history[k][idx]);
+}
+
+function getOrdTree() {
+	if (!treeStale)
+		return ordTree;
+		
+	ordTree = {_members: []};
+	var node;
+
+	Object.keys(history).forEach(function(key) {
+		node = ordTree;
+		
+		key.split('|').forEach(function(chord) {
+			node._members.push(key);
+			
+			if (!(chord in node))
+				node[chord] = {_members: []};
+			
+			node = node[chord];
+		})
+		
+
+		node._members.push(key);
+	})
+	
+	treeStale = false;
+	return ordTree;
+}
+
+function treeSearch(key) {
+	var node = getOrdTree();
+	var chords = key.split('|');
+	var chord;
+	
+	while (chords.length && ((chord = chords.shift()) in node)) {
+		node = node[chord];
+	}
+	
+	var m = node._members;
+	return m[~~(Math.random() * m.length)];	
 }
