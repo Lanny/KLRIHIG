@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 615.0, 645.0, 943.0, 511.0 ],
+		"rect" : [ 615.0, 645.0, 786.0, 507.0 ],
 		"openrect" : [ 0.0, 0.0, 612.0, 404.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -47,10 +47,10 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 411.0, 546.0, 330.0, 49.0 ],
+					"patching_rect" : [ 411.0, 546.0, 561.0, 49.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 18.0, 340.0, 330.0, 49.0 ],
-					"range" : 52,
+					"presentation_rect" : [ 25.0, 340.0, 561.0, 49.0 ],
+					"range" : 88,
 					"style" : ""
 				}
 
@@ -435,7 +435,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-43", 1 ],
-					"midpoints" : [ 470.5, 533.0, 731.5, 533.0 ],
+					"midpoints" : [ 470.5, 533.0, 962.5, 533.0 ],
 					"source" : [ "obj-24", 1 ]
 				}
 
