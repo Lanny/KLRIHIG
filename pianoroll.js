@@ -5,9 +5,24 @@ var val = 0;
 var last_x = 0;
 var last_y = 0;
 
+var NOW = 0;
+var _LAST_BANG = Date.now();
+
+var SEL_START;
+var SEL_END;
+
 var notes;
 reset();
-draw(Date.now());
+draw(NOW);
+
+function _advanceNow() {
+	var n = Date.now(),
+		dt = n - _LAST_BANG;
+	NOW += dt;
+	_LAST_BANG = n;
+	
+	return NOW;
+}
 
 function draw(n)
 {
@@ -64,11 +79,17 @@ function reset() {
 	for (var i=0; i<127; i++) {
 		notes[i] = []; 
 	}
+	
+	SEL_START = null;
+	SEL_END = null;
+	NOW = 0;
+	_LAST_BANG = Date.now();
+
 }
 
 function test() {
 	reset();
-	var n = Date.now();
+	var n = NOW;
 	notes[69] = [
 		[
 			n - 1000,
@@ -86,27 +107,28 @@ function test() {
 			n - 4500
 		]
 	];
-	draw(Date.now());
+	draw(n);
 	refresh();
 	post('Suup wit it.');
 	post();
 }
 
 function bang() {
-	draw(Date.now());
+	draw(_advanceNow());
 	refresh();
 }
 
 function midinote(pitch, vel) {
-	var lastNote = notes[pitch].length && notes[pitch][notes[pitch].length - 1];
+	var lastNote = notes[pitch].length && notes[pitch][notes[pitch].length - 1],
+		n = _advanceNow();
 	
 	if (vel === 0) {
-		lastNote[0] = Date.now();
+		lastNote[0] = n;
 	} else {
 		if (lastNote && lastNote[0] === null) {
 			notes[pitch].pop();
 		}
-		notes[pitch].push([null, Date.now()]);
+		notes[pitch].push([null, n]);
 	}
 }
 
