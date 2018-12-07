@@ -134,10 +134,14 @@ function midinote(pitch, vel) {
 		n = _advanceNow();
 	
 	if (vel === 0) {
+		if (lastNote[0] !== null) {
+			return;
+		}
 		lastNote[0] = n;
 	} else {
 		if (lastNote && lastNote[0] === null) {
-			notes[pitch].pop();
+			//notes[pitch].pop();
+			lastNote[0] = n - 1;
 		}
 		notes[pitch].push([null, n, vel]);
 	}
