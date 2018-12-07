@@ -2,13 +2,14 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 5,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 0,
+			"revision" : 1,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
+		"classnamespace" : "box",
 		"openrect" : [ 432.5, 267.0, 612.0, 404.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -88,7 +89,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 498.0, 692.0, 27.0, 22.0 ],
-					"style" : "",
 					"text" : "s d"
 				}
 
@@ -100,7 +100,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 412.0, 692.0, 80.0, 22.0 ],
-					"style" : "",
 					"text" : "s train-model"
 				}
 
@@ -119,7 +118,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 224.0, 119.0, 171.0, 21.0 ],
 					"rounded" : 7.0,
-					"style" : "",
 					"text" : "Train Model",
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "textbutton[2]"
@@ -178,7 +176,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 91.0, 732.0, 133.0, 22.0 ],
-					"style" : "",
 					"text" : "radio-group mc-order 1"
 				}
 
@@ -240,7 +237,6 @@
 					"patching_rect" : [ 434.0, 23.0, 177.0, 25.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 425.5, 19.0, 177.0, 25.0 ],
-					"style" : "",
 					"text" : "PLAYBACK",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -260,7 +256,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 224.0, 86.0, 171.0, 21.0 ],
 					"rounded" : 7.0,
-					"style" : "",
 					"text" : "Save .mkov File",
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "textbutton[1]"
@@ -275,8 +270,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 15.0, 15.0, 4.0, 4.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 221.0, 83.0, 177.0, 27.0 ],
-					"style" : ""
+					"presentation_rect" : [ 221.0, 83.0, 177.0, 27.0 ]
 				}
 
 			}
@@ -293,7 +287,6 @@
 					"patching_rect" : [ 229.0, 23.0, 177.0, 25.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 221.0, 19.0, 177.0, 25.0 ],
-					"style" : "",
 					"text" : "TRAINING",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -313,7 +306,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 224.0, 54.0, 171.0, 21.0 ],
 					"rounded" : 7.0,
-					"style" : "",
 					"text" : "Load .mkov File",
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "textbutton"
@@ -355,7 +347,6 @@
 					"patching_rect" : [ 24.0, 23.0, 177.0, 25.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 14.0, 19.0, 177.0, 25.0 ],
-					"style" : "",
 					"text" : "LOGGING",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -413,7 +404,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 459.0, 566.0, 36.0, 22.0 ],
-					"style" : "",
 					"text" : "write"
 				}
 
@@ -426,7 +416,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 412.0, 566.0, 35.0, 22.0 ],
-					"style" : "",
 					"text" : "read"
 				}
 
@@ -438,7 +427,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 412.0, 602.0, 45.0, 22.0 ],
-					"style" : "",
 					"text" : "s tl-col"
 				}
 
@@ -451,7 +439,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 91.0, 602.0, 25.0, 22.0 ],
-					"style" : "",
 					"text" : "0"
 				}
 
@@ -464,7 +451,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 91.0, 573.0, 25.0, 22.0 ],
-					"style" : "",
 					"text" : "r d"
 				}
 
@@ -476,7 +462,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 91.0, 692.0, 27.0, 22.0 ],
-					"style" : "",
 					"text" : "s g"
 				}
 
@@ -488,7 +473,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 131.5, 692.0, 27.0, 22.0 ],
-					"style" : "",
 					"text" : "s e"
 				}
 
@@ -501,7 +485,6 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "" ],
 					"patching_rect" : [ 91.0, 663.0, 100.0, 22.0 ],
-					"style" : "",
 					"text" : "sel 1 0"
 				}
 
@@ -520,7 +503,7 @@
 					"patching_rect" : [ 91.0, 630.0, 100.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 425.5, 53.0, 177.0, 24.0 ],
-					"rounded" : 20.599998,
+					"rounded" : 20.599997999999999,
 					"style" : "velvet",
 					"text" : "Start Playback",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -537,7 +520,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 91.0, 805.0, 37.0, 22.0 ],
-					"style" : "",
 					"text" : "s ord"
 				}
 
@@ -550,8 +532,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 91.0, 769.75, 37.0, 22.0 ],
-					"style" : ""
+					"patching_rect" : [ 91.0, 769.75, 37.0, 22.0 ]
 				}
 
 			}
@@ -563,8 +544,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 0.0, 0.0, 4.0, 4.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 221.0, 51.0, 177.0, 27.0 ],
-					"style" : ""
+					"presentation_rect" : [ 221.0, 51.0, 177.0, 27.0 ]
 				}
 
 			}
@@ -579,7 +559,6 @@
 					"patching_rect" : [ 229.0, 157.0, 173.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 221.0, 153.0, 173.0, 22.0 ],
-					"style" : "",
 					"text" : "Chain Order",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"underline" : 1
@@ -594,8 +573,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 30.0, 30.0, 4.0, 4.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 221.0, 116.0, 177.0, 27.0 ],
-					"style" : ""
+					"presentation_rect" : [ 221.0, 116.0, 177.0, 27.0 ]
 				}
 
 			}
@@ -609,7 +587,7 @@
 					"grad2" : [ 0.086275, 0.309804, 0.52549, 1.0 ],
 					"id" : "obj-89",
 					"ignoreclick" : 0,
-					"jspainterfile" : "Macintosh HD:/Users/lanny/KLRIHIG/jspainter/beveled-panel.js",
+					"jspainterfile" : "beveled-panel.js",
 					"maxclass" : "panel",
 					"mode" : 1,
 					"numinlets" : 1,
@@ -618,8 +596,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ -0.5, 0.0, 612.0, 404.0 ],
 					"proportion" : 0.39,
-					"rounded" : 39,
-					"style" : ""
+					"rounded" : 39
 				}
 
 			}
@@ -722,21 +699,21 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "lg-ctrl.maxpat",
-				"bootpath" : "~/KLRIHIG",
+				"bootpath" : "~/Downloads/KLRIHIG",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "radio-button.maxpat",
-				"bootpath" : "~/KLRIHIG",
+				"bootpath" : "~/Downloads/KLRIHIG",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "radio-group.maxpat",
-				"bootpath" : "~/KLRIHIG",
+				"bootpath" : "~/Downloads/KLRIHIG",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

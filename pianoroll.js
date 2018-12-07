@@ -43,15 +43,6 @@ function draw(n)
 				moveto(time2world(SEL_END), 0);
 				lineto(time2world(SEL_END), 1);
 				
-				/*
-				beginstroke('basic2d');
-				strokepoint(time2world(SEL_END), 0);
-				strokepoint(time2world(SEL_END), 1);
-				strokepoint(time2world(SEL_START), 1);
-				strokepoint(time2world(SEL_START), 0);
-				endstroke();
-				*/
-				
 				var z = -.1;
 				glcolor([1,1,0,.5]);	
 				quad(time2world(SEL_END), 0, z, time2world(SEL_END), 1, z, time2world(SEL_START), 1, z, time2world(SEL_START), 0, z);
@@ -66,7 +57,7 @@ function draw(n)
 				minTime = n - TDOMAIN,
 				k = noteHist.length - 1;
 
-			while (k > 0) {				
+			while (k >= 0) {				
 				var note = noteHist[k],
 					nStart = note[1],
 					nEnd = (note[0] === null) ? n : note[0],
@@ -148,7 +139,36 @@ function midinote(pitch, vel) {
 		if (lastNote && lastNote[0] === null) {
 			notes[pitch].pop();
 		}
-		notes[pitch].push([null, n]);
+		notes[pitch].push([null, n, vel]);
+	}
+}
+
+function outputSelection() {
+	if (!(SEL_START && SEL_END)) {
+		post('Invalid selection.');
+		post();
+		return;
+	}
+	
+	var events = [];
+	for (var i=0; i<127; i++) {
+		var noteHist = notes[i];
+		for (var k=0; k<noteHist.length; k++) {
+			var note = noteHist[k];
+			if (note[1] < SEL_START || note[1] > SEL_END)
+				continue;
+				
+			events.push([i, note[2], note[1]]);
+			events.push([i, 0, note[0]]); 
+		}
+	}
+	
+	events.sort(function(a,b) { return a[2] - b[2]; });
+	var base = events[0][2];
+	events = events.map(function(e) { return [e[0], e[1], e[2] - base]; })
+	
+	for (var i=0; i<events.length; i++) {
+		outlet(0, events[i]);
 	}
 }
 
@@ -162,15 +182,6 @@ function time2world(t) {
 	return (NOW - t) / TDOMAIN;
 }
 time2world.local = 1;
-
-// all mouse events are of the form: 
-// onevent <x>, <y>, <button down>, <cmd(PC ctrl)>, <shift>, <capslock>, <option>, <ctrl(PC rbutton)>
-// if you don't care about the additonal modifiers args, you can simply leave them out.
-// one potentially confusing thing is that mouse events are in absolute screen coordinates, 
-// with (0,0) as left top, and (width,height) as right, bottom, while drawing 
-// coordinates are in relative world coordinates, with (0,0) as the center, +1 top, -1 bottom,
-// and x coordinates using a uniform scale based on the y coordinates. to convert between screen 
-// and world coordinates, use sketch.screentoworld(x,y) and sketch.worldtoscreen(x,y,z).
 
 function onclick(x,y,but,cmd,shift,capslock,option,ctrl) {
 	_MOUSE_DOWN = Date.now();
@@ -197,15 +208,6 @@ function ondrag(x,y,but,cmd,shift,capslock,option,ctrl)
 	refresh();
 }
 ondrag.local = 1; //private. could be left public to permit "synthetic" events
-
-function ondblclick(x,y,but,cmd,shift,capslock,option,ctrl)
-{
-	last_x = x;
-	last_y = y;
-	msg_float(0); // reset dial?
-}
-ondblclick.local = 1; //private. could be left public to permit "synthetic" events
-
 
 function forcesize(w,h)
 {
